@@ -279,7 +279,35 @@ margin-left: 30px;
       margin-bottom: 50px;
 }
 .section img {display: block;}
-/* team */
+
+/* we-do section            ---------------------------------------------    */
+.we-do-thumb {
+position: relative;
+}
+.laibel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+        /* flex-shrink: 0; */
+    background: rgba(47, 48, 58, 0.80);
+}
+.laibel p {
+    color: #FFF;
+        /* text-align: center; */
+        /* font-family: Roboto; */
+        /* font-size: 14px; */
+        /* font-style: normal; */
+        font-weight: 700;
+        /* line-height: normal; */
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+}
+
+/* team sections            ---------------------------------------------     */
 .team {
     background: var(--btn-bg-color);
 }
