@@ -75,7 +75,7 @@ header li {
     display: block;
     padding: 32px 0;
 }
- .nav-link::after {
+.site-nav a::after {
         content: '';
         opacity: 0;
             position: absolute;
@@ -93,14 +93,14 @@ header li {
 .site-nav a::selection {
     color: var(--blue-color);
 }
-.site-nav .nav-link:hover::after, 
-.site-nav .nav-link:focus:after {
+.site-nav a:hover::after, 
+.site-nav a:focus:after {
 opacity: 1;
 }
 .site-nav .current {
     color: var(--blue-color);
 }
-.site-nav .nav-link.current::after {
+.site-nav a.current::after {
 opacity: 1;
 }
 
