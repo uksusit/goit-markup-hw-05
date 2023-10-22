@@ -69,20 +69,40 @@ header li {
     font-weight: 500;
     letter-spacing: 0.28px;
     /* outline: 1px solid red; */
+    position: relative;
 }
 .site-nav a {
     display: block;
     padding: 32px 0;
 }
+ .nav-link::after {
+        content: '';
+        opacity: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* width: 48px; */
+            width: 100%;
+            height: 4px;
+            /* flex-shrink: 0; */
+            border-radius: 2px;
+            background: var(--blue-color);
+ }
 .site-nav a:hover,
 .site-nav a:focus,
 .site-nav a::selection {
     color: var(--blue-color);
 }
+.site-nav .nav-link:hover::after, 
+.site-nav .nav-link:focus:after {
+opacity: 1;
+}
 .site-nav .current {
     color: var(--blue-color);
 }
-
+.site-nav .nav-link.current::after {
+opacity: 1;
+}
 
 /* header contacts */
 
@@ -290,7 +310,7 @@ position: relative;
     justify-content: space-around;
     position: absolute;
     bottom: 0;
-    width: 370px;
+    width: 100%;
     height: 70px;
         /* flex-shrink: 0; */
     background: rgba(47, 48, 58, 0.80);
