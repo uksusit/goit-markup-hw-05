@@ -196,7 +196,7 @@ footer .logo span {
         rgba(47, 48, 58, 0.40),
         rgba(47, 48, 58, 0.40)),
           url( ../images/Img-hero.jpg);
-    position: relative;          
+    /* position: relative;           */
 }
 .title-hero {
     width: 696px;
@@ -211,9 +211,9 @@ footer .logo span {
         margin-right: auto;
         margin-bottom: 30px;
 }
-.hero::after{
-    content: '';
-    display: none;
+.backdrop{
+    /* content: ''; */
+    /* display: none; */
     /* opacity: 0; */
     position: fixed;
     top: 0;
@@ -222,11 +222,12 @@ footer .logo span {
     height: 100%;
     background-color:  rgba(0, 0, 0, 0.20);
 }
-header .container {position: relative;}
+/* header .container {position: relative;} */
 .form {
     position: absolute;
-    top: 140px;
-    left: 536px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
     border-radius: 4px;
