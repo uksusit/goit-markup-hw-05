@@ -45,12 +45,7 @@
             <!-- фон тимчасово -->
             <!-- <img src="./images/Bg.jpg" alt="" width="1600">     -->
             <h1 class="title-hero">Ефективні рішення для вашого бізнесу   </h1>
-            <button type="button" class="btn prm">Замовити послугу</button>
-            <div class="backdrop">
-                <div class="form">
-                <button class="close"></button>
-                </div>
-            </div>
+            <button type="button " class="btn prm" data-modal-open>Замовити послугу</button>
 
             </div>
         </section>
@@ -331,6 +326,13 @@
             </div>
 
         </section>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="close" data-modal-close></button>
+            </div>
+        </div>
+
     </main>
     <footer>
         <div class="container">
@@ -381,5 +383,7 @@
         </div>
 
     </footer>
+    
+    <script src="./js/modal.js"></script>
 </body>
 </html>
