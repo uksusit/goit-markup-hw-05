@@ -42,11 +42,9 @@
         <!--Hero-->
         <section  class="hero">
             <div class="container hero-thumb">
-            <!-- фон тимчасово -->
-            <!-- <img src="./images/Bg.jpg" alt="" width="1600">     -->
             <h1 class="title-hero">Ефективні рішення для вашого бізнесу   </h1>
             <button type="button " class="btn prm" data-modal-open>Замовити послугу</button>
-
+            <!-- backdrop та modal шукай наприкінці main  -->  
             </div>
         </section>
 
@@ -329,11 +327,15 @@
 
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="close" data-modal-close></button>
+                <button class="close" data-modal-close>
+                    <svg class="close-icon">
+                        <use href="./images/icons.svg#close-icon"></use>
+                    </svg> 
+                </button>
             </div>
         </div>
-
     </main>
+
     <footer>
         <div class="container">
             <div class="string">
